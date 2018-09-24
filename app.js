@@ -34,7 +34,7 @@ db.once('open', function() {
   console.log(`Connected blog db!`);
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log('listening on port 3000!')
 })
 
